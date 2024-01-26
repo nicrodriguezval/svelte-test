@@ -1,6 +1,15 @@
 <script>
 	let count = 0;
+	// reactivity
 	$: doubled = count * 2;
+	$: {
+		console.log(`the count is ${count}`);
+		console.log(`doubled is ${doubled}`);
+	}
+	$: if (count >= 10) {
+		alert(`count is dangerously high!`);
+		count = 0;
+	}
 
 	function handleClick() {
 		count += 1;
