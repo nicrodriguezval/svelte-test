@@ -3,10 +3,17 @@
 	import Button from '../components/Button.svelte';
 	import Arrays from '../components/Arrays.svelte';
 	import Html from '../components/Html.svelte';
+	import Package from '../components/Package.svelte';
 
 	const name = 'Svelte';
 	const src = 'https://compote.slate.com/images/697b023b-64a5-49a0-8059-27b963453fb1.gif';
-	const alt = 'Homer hidding';
+	const alt = 'Homer hiding';
+	const pkg = {
+		name: 'Svelte',
+		speed: 'blazing',
+		version: 3,
+		website: 'https://svelte.dev'
+	};
 </script>
 
 <main>
@@ -21,6 +28,7 @@
 	<Html />
 	<Button />
 	<Arrays />
+	<Package {...pkg} />
 </main>
 
 <style>
