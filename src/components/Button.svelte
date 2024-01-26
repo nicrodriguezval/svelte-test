@@ -6,7 +6,7 @@
 		console.log(`the count is ${count}`);
 		console.log(`doubled is ${doubled}`);
 	}
-	$: if (count >= 10) {
+	$: if (count >= 20) {
 		alert(`count is dangerously high!`);
 		count = 0;
 	}
@@ -18,10 +18,21 @@
 
 <section>
 	<h3>Button component</h3>
+
 	<button on:click={handleClick}>
 		Clicked {count}
 		{count === 1 ? 'time' : 'times'}
 	</button>
 
 	<p>{count} doubled is {doubled}</p>
+
+	<div>
+		{#if count > 10}
+			<p>{count} is greater than 10</p>
+		{:else if count < 5}
+			<p>{count} is less than 5</p>
+		{:else}
+			<p>{count} is between 5 and 10 inclusive</p>
+		{/if}
+	</div>
 </section>
