@@ -16,9 +16,12 @@
 	}
 </script>
 
-<button on:click={handleClick}>
-	Clicked {count}
-	{count === 1 ? 'time' : 'times'}
-</button>
+<section>
+	<h3>Button component</h3>
+	<button on:click={handleClick}>
+		Clicked {count}
+		{count === 1 ? 'time' : 'times'}
+	</button>
 
-<p>{count} doubled is {doubled}</p>
+	<p>{count} doubled is {doubled}</p>
+</section>
