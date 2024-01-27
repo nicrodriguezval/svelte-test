@@ -5,6 +5,7 @@
 	import Html from '../components/Html.svelte';
 	import Package from '../components/Package.svelte';
 	import Loop from '../components/Loop.svelte';
+	import Async from '../components/Async.svelte';
 
 	const name = 'Svelte';
 	const src = 'https://compote.slate.com/images/697b023b-64a5-49a0-8059-27b963453fb1.gif';
@@ -31,6 +32,7 @@
 	<Arrays />
 	<Package {...pkg} />
 	<Loop />
+	<Async />
 </main>
 
 <style>
