@@ -20,10 +20,16 @@
 	<h3>Button component</h3>
 
 	<button on:click={handleClick}>
-		Clicked {count}
-		{count === 1 ? 'time' : 'times'}
+		Count click
 	</button>
 
+	<button on:click|once={handleClick}>
+		Onetime count click
+	</button>
+
+	<p>
+		Clicked {count === 1 ? 'time' : 'times'}
+	</p>
 	<p>{count} doubled is {doubled}</p>
 
 	<div>
@@ -36,3 +42,13 @@
 		{/if}
 	</div>
 </section>
+
+<style>
+	button {
+		padding: 5px;
+		border-radius: 5px;
+		border-width: 1px;
+		border-color: gray;
+		width: 200px;
+	}
+</style>
