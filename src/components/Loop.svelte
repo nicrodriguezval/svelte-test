@@ -35,5 +35,10 @@
 		width: 50px;
 		aspect-ratio: 1;
 		cursor: pointer;
+		transition: opacity 0.2s ease-in-out;
+	}
+
+	button:hover {
+		opacity: 0.8;
 	}
 </style>
