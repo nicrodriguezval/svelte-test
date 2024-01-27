@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
 	import Nested from '../components/Nested.svelte';
 	import Button from '../components/Button.svelte';
 	import Arrays from '../components/Arrays.svelte';
@@ -6,6 +6,7 @@
 	import Package from '../components/Package.svelte';
 	import Loop from '../components/Loop.svelte';
 	import Async from '../components/Async.svelte';
+	import Events from '../components/Events.svelte';
 
 	const name = 'Svelte';
 	const src = 'https://compote.slate.com/images/697b023b-64a5-49a0-8059-27b963453fb1.gif';
@@ -16,6 +17,10 @@
 		version: 3,
 		website: 'https://svelte.dev'
 	};
+
+	function hello(event: CustomEvent<{ name: string }>) {
+		alert(`Hello, ${event.detail.name}!`);
+	}
 </script>
 
 <main>
@@ -33,6 +38,7 @@
 	<Package {...pkg} />
 	<Loop />
 	<Async />
+	<Events on:hello={hello} />
 </main>
 
 <style>
