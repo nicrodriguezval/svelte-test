@@ -19,11 +19,11 @@
 		website: 'https://svelte.dev'
 	};
 
-	function hello(event: CustomEvent<{ name: string }>) {
+	function handleHello(event: CustomEvent<{ name: string }>) {
 		alert(`Hello, ${event.detail.name}!`);
 	}
 
-	function message(event: CustomEvent<{ value: string }>) {
+	function handleMessage(event: CustomEvent<{ value: string }>) {
 		alert(`The message is: ${event.detail.value}`);
 	}
 </script>
@@ -43,8 +43,8 @@
 	<Package {...pkg} />
 	<Loop />
 	<Async />
-	<Events on:hello={hello} />
-	<Outer on:message={message} />
+	<Events on:hello={handleHello} />
+	<Outer on:message={handleMessage} />
 </main>
 
 <style>
