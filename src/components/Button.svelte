@@ -45,10 +45,6 @@
 
 <style>
 	button {
-		padding: 5px;
-		border-radius: 5px;
-		border-width: 1px;
-		border-color: gray;
 		width: 200px;
 	}
 </style>

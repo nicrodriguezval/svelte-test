@@ -14,3 +14,19 @@ body {
 	color: #333;
 	min-height: 100vh;
 }
+
+section {
+	padding: 10px;
+	border-radius: 10px;
+	border: solid 1px gray;
+	display: grid;
+	place-content: center;
+}
+
+button {
+	padding: 5px;
+	cursor: pointer;
+	border-radius: 5px;
+	border-color: gray;
+	border-width: 1px;
+}

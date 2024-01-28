@@ -50,7 +50,8 @@
 <style>
 	main {
 		display: grid;
-		place-content: center;
+		align-content: center;
+		grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
 		gap: 15px;
 		min-height: 100vh;
 		text-align: center;
@@ -59,6 +60,7 @@
 
 	h1 {
 		color: red;
+		grid-column: 1/-1;
 	}
 
 	.homer-image {
