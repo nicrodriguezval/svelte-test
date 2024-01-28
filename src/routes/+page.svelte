@@ -10,6 +10,7 @@
 	import Outer from '../components/Outer.svelte';
 	import TextInput from '../components/TextInput.svelte';
 	import NumericInputs from '../components/NumericInputs.svelte';
+	import CheckboxInput from '../components/CheckboxInput.svelte';
 
 	const name = 'Svelte';
 	const src = 'https://compote.slate.com/images/697b023b-64a5-49a0-8059-27b963453fb1.gif';
@@ -49,6 +50,7 @@
 	<Outer on:message={handleMessage} />
 	<TextInput />
 	<NumericInputs />
+	<CheckboxInput />
 </main>
 
 <style>
