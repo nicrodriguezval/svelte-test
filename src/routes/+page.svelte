@@ -7,6 +7,7 @@
 	import Loop from '../components/Loop.svelte';
 	import Async from '../components/Async.svelte';
 	import Events from '../components/Events.svelte';
+	import Outer from '../components/Outer.svelte';
 
 	const name = 'Svelte';
 	const src = 'https://compote.slate.com/images/697b023b-64a5-49a0-8059-27b963453fb1.gif';
@@ -20,6 +21,10 @@
 
 	function hello(event: CustomEvent<{ name: string }>) {
 		alert(`Hello, ${event.detail.name}!`);
+	}
+
+	function message(event: CustomEvent<{ value: string }>) {
+		alert(`The message is: ${event.detail.value}`);
 	}
 </script>
 
@@ -39,6 +44,7 @@
 	<Loop />
 	<Async />
 	<Events on:hello={hello} />
+	<Outer on:message={message} />
 </main>
 
 <style>
@@ -48,6 +54,7 @@
 		gap: 7px;
 		min-height: 100vh;
 		text-align: center;
+		padding: 15px;
 	}
 
 	h1 {
