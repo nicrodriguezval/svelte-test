@@ -51,10 +51,10 @@
 	main {
 		display: grid;
 		place-content: center;
-		gap: 7px;
+		gap: 15px;
 		min-height: 100vh;
 		text-align: center;
-		padding: 15px;
+		padding: 25px;
 	}
 
 	h1 {
