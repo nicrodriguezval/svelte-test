@@ -12,6 +12,7 @@
 	import NumericInputs from '../components/NumericInputs.svelte';
 	import CheckboxInput from '../components/CheckboxInput.svelte';
 	import Select from '../components/Select.svelte';
+	import GroupInputs from '../components/GroupInputs.svelte';
 
 	const name = 'Svelte';
 	const src = 'https://compote.slate.com/images/697b023b-64a5-49a0-8059-27b963453fb1.gif';
@@ -53,6 +54,7 @@
 	<NumericInputs />
 	<CheckboxInput />
 	<Select />
+	<GroupInputs />
 </main>
 
 <style>
