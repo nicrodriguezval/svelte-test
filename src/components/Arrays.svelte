@@ -10,6 +10,6 @@
 
 <section>
 	<h3>Arrays component</h3>
-	<p>{numbers.join(', ')} = {sum}</p>
+	<p>{numbers.join(' + ')} = {sum}</p>
 	<button on:click={addNumber}>Add number</button>
 </section>
