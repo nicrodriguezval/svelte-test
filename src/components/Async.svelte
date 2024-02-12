@@ -17,6 +17,6 @@
 	{:then number}
 		<p>The number is {number}</p>
 	{:catch error}
-		<p style="color: red">{error.message}</p>
+		<p style="color: red;">{error.message}</p>
 	{/await}
 </section>
