@@ -1,6 +1,9 @@
 {
-	"name": "test",
+	"name": "svelte-test",
 	"version": "0.0.1",
+	"repository": "git@github.com:nicrodriguezval/svelte-test.git",
+	"author": "Nicolás Rodríguez <nicrodriguezval@gmail.com>",
+	"license": "MIT",
 	"scripts": {
 		"dev": "vite dev",
 		"build": "vite build && npm run package",
@@ -48,5 +51,8 @@
 	},
 	"svelte": "./dist/index.js",
 	"types": "./dist/index.d.ts",
-	"type": "module"
+	"type": "module",
+	"dependencies": {
+		"marked": "^12.0.0"
+	}
 }
