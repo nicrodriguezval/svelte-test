@@ -30,3 +30,7 @@ button {
 	border-color: gray;
 	border-width: 1px;
 }
+
+p {
+	font-size: 0.85rem;
+}
