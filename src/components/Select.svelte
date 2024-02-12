@@ -46,5 +46,5 @@
 		<button type="submit" disabled={!answer}>Submit</button>
 	</form>
 
-	<p>Selected question {selected ? selected.id : '[waiting...]'}</p>
+	<p>Selected question No. {selected ? (selected.id + 1) : '[waiting...]'}</p>
 </section>
